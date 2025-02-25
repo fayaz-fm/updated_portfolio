@@ -1,0 +1,35 @@
+.resume-img{
+    border-radius: 30%;
+    height: 300px;
+}
+
+.icon-square {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    padding: 4px;
+}
+
+
+.company-image{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    display: inline;
+    float: left;
+    margin-right: 30px;
+}
+.gradient-background{
+    background-color: #F7F7F7;
+    background-size: 180% 180%;
+}
+
+.gradient-background2{
+    background-color: #FFDFEF;
+}
+
+
+
