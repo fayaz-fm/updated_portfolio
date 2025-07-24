@@ -32,4 +32,18 @@
 }
 
 
+.gradient-background {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  }
+  
+  #Certifications h2 {
+    color: #343a40;
+  }
+  
+  .btn-lg {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+  }
+
 

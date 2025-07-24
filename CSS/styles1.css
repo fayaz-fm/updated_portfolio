@@ -1,0 +1,45 @@
+/* Center the heading */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: #343a40;
+  }
+  
+  /* Center carousel images */
+  .carousel-inner img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Caption styles below image */
+  .caption-below h5 {
+    color: #0d6efd; /* Bootstrap blue */
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .caption-below p {
+    color: #6c757d; /* Muted gray */
+    font-size: 0.95rem;
+  }
+  
+  /* Customize carousel buttons */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 100% 100%;
+  }
+  
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: #0056b3;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: #343a40;
+  }
+  
