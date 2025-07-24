@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./CSS/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./CSS/styles.css" />
 </head>
 <body>
-    <section class="contactme" id="contactme">
-        <div class="card text-center">
-            <div class="card-header">
-              Contact Me
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">You can reach me through here</h5>
-              <img src="./Logo and images/Resume pic.jpg" alt="mypic" height="200" style="margin-bottom: 10px; border-radius: 30%;" >
-              <p class="card-text">Email: <a href="mailto:mohamedfayazp@usf.edu" >mohamedfayazp@usf.edu</a> </p>
-              <p class="card-text">Phone number: <a href="tel: +1 8135996911" class="btn btn-primary">Call me Now</a></p>
-              <p class="card-text">Linkedin Profile: <a href="https://www.linkedin.com/in/mohamedfayazp/"><img class="icon-square" src="./Logo and images/linkedin logo.png" alt="linkedin"></a></p>
-              <a href="index.html" class="btn btn-primary">Get to Know me!</a>
-              <a href="myhobbies.html" class="btn btn-primary">Get to Know my hobby</a>
-            </div>
-          </div>
 
-    </section>
-    <section id="Footer">
-      <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="./contactme.html" class="nav-link px-2 text-muted">Contact Me!</a></li>
-            <li class="nav-item"><a href="./myhobbies.html" class="nav-link px-2 text-muted">Hobbies</a></li>
-            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">About</a></li>
-          </ul>
-          <p class="text-center text-muted">© 2025 Mohamed Fayaz Designed Website</p>
-        </footer>
+  <!-- Contact Section -->
+  <section id="contactme" class="py-5">
+    <div class="container">
+      <div class="card shadow-lg border-0 rounded-4">
+        <div class="card-header bg-primary text-white text-center fs-4">
+          Contact Me
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-3">You can reach me through the channels below</h5>
+          <img src="./Logo and images/Resume pic.jpg" alt="My Picture" class="img-fluid rounded-circle mb-4" style="max-height: 200px;" />
+
+          <p class="card-text">
+            <strong>Email:</strong><br />
+            <a href="mailto:fayaz0899@gmail.com" class="text-decoration-none">fayaz0899@gmail.com</a>
+          </p>
+
+          <p class="card-text">
+            <strong>Phone:</strong><br />
+            <a href="tel:+18135996911" class="btn btn-outline-primary mt-1">📞 Call me now</a>
+          </p>
+
+          <p class="card-text">
+            <strong>LinkedIn:</strong><br />
+            <a href="https://www.linkedin.com/in/mohamedfayazp/" target="_blank">
+              <img src="./Logo and images/linkedin logo.png" alt="LinkedIn" height="40" />
+            </a>
+          </p>
+
+          <div class="d-flex justify-content-center gap-3 mt-4">
+            <a href="index.html" class="btn btn-primary">Know More About Me</a>
+            <a href="myhobbies.html" class="btn btn-outline-secondary">See My Hobbies</a>
+          </div>
+        </div>
       </div>
-    </section>
-    
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section id="Footer" class="bg-light">
+    <div class="container">
+      <footer class="py-4 mt-5">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="./contactme.html" class="nav-link px-3 text-muted">Contact Me</a></li>
+          <li class="nav-item"><a href="./myhobbies.html" class="nav-link px-3 text-muted">Hobbies</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link px-3 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted mb-0">© 2025 Mohamed Fayaz – Designed with ❤️ using Bootstrap</p>
+      </footer>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

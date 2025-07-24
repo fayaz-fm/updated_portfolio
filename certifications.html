@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Certifications</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./CSS/styles2.css" />
+  <style>
+    .carousel-container {
+      display: none;
+    }
+    .carousel-container.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="text-center my-4">My Certifications</h1>
+
+  <!-- Buttons -->
+  <div class="text-center mb-4">
+    <button class="btn custom-btn me-2" onclick="showCarousel('linkedin')">LinkedIn Certifications</button>
+    <button class="btn custom-btn" onclick="showCarousel('udemy')">Udemy Certifications</button>
+  </div>
+
+  <section id="slider" class="container">
+
+    <!-- LinkedIn Carousel -->
+    <div id="linkedin-carousel" class="carousel-container active">
+      <div id="carouselLinkedIn" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <img src="./Certification/Linkedin Learning/Become a PLC Developer.jpg" class="d-block w-50 mx-auto" alt="PLC Developer">
+            <div class="caption-below mt-2">
+              <h5>Become a PLC Developer</h5>
+              <p>Learned fundamental PLC programming using ladder logic, memory addressing, and industrial control concepts.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Certification/Linkedin Learning/CertificateOfCompletion_Learning Industrial Automation_page-0001.jpg" class="d-block w-50 mx-auto" alt="Industrial Automation">
+            <div class="caption-below mt-2">
+              <h5>Learning Industrial Automation</h5>
+              <p>Gained foundational knowledge on sensors, actuators, PLCs, SCADA, and system integration in industrial environments.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Certification/Linkedin Learning/PLC Memory organization.jpg" class="d-block w-50 mx-auto" alt="PLC Memory Organization">
+            <div class="caption-below mt-2">
+              <h5>PLC Memory Organization</h5>
+              <p>Explored PLC memory structure including input/output registers, timers, counters, and data storage blocks.</p>
+            </div>
+          </div>
+          <!-- Add more LinkedIn slides here -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLinkedIn" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLinkedIn" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Udemy Carousel -->
+    <div id="udemy-carousel" class="carousel-container">
+      <div id="carouselUdemy" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <img src="./Certification/Udemy/Siemens TIA portal certificate.jpg" class="d-block w-50 mx-auto" alt="Siemens TIA Portal">
+            <div class="caption-below mt-2">
+              <h5>Siemens TIA Portal Programming</h5>
+              <p>Programmed Siemens S7 PLCs using TIA Portal for automation projects involving HMI and hardware interfacing.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Certification/Udemy/factoryTalk view certificate.jpg" class="d-block w-50 mx-auto" alt="FactoryTalk View SE">
+            <div class="caption-below mt-2">
+              <h5>FactoryTalk View SE (HMI)</h5>
+              <p>Created HMI screens and connected them to PLCs to monitor and control real-time industrial processes with FactoryTalk View.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Certification/Udemy/Arduino certificate.jpg" class="d-block w-50 mx-auto" alt="Arduino Programming">
+            <div class="caption-below mt-2">
+              <h5>Arduino for Embedded Systems</h5>
+              <p>Built automation prototypes using Arduino, sensors, actuators, and C programming for embedded applications.</p>
+            </div>
+          </div>
+          <!-- Add more Udemy slides here -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselUdemy" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselUdemy" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+  </section>
+  <section id="Footer">
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="./contactme.html" class="nav-link px-2 text-muted">Contact Me!</a></li>
+          <li class="nav-item"><a href="./myhobbies.html" class="nav-link px-2 text-muted">Hobbies</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2025 Mohamed Fayaz Designed Website</p>
+      </footer>
+    </div>
+  </section>
+
+  <script>
+    function showCarousel(type) {
+      const linkedin = document.getElementById('linkedin-carousel');
+      const udemy = document.getElementById('udemy-carousel');
+
+      if (type === 'linkedin') {
+        linkedin.classList.add('active');
+        udemy.classList.remove('active');
+      } else {
+        udemy.classList.add('active');
+        linkedin.classList.remove('active');
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
